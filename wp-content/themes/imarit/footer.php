@@ -13,8 +13,8 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+	<footer id="colophon" class="site-footer row">
+		<div class="site-info col-md-12">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'imarit' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
@@ -24,7 +24,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'imarit' ), 'imarit', '<a href="http://underscores.me/">Underscores.me</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'imarit' ), 'imarit', '<a href="http://kthor.dk/">cdsk</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

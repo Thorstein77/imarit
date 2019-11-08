@@ -13,7 +13,7 @@ A starter theme called imarit.
 
 == Description ==
 
-Description
+theme build for Imarit
 
 == Installation ==
 
