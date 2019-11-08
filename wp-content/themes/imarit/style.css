@@ -993,8 +993,39 @@ object {
 	width: 100%;
 	background-color: black;
 	color: white;
-	padding: 5px;
+	padding: 5px !important;
+	margin: 0 !important;
+}
+
+.flexbox{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+
+}
+
+.flexItem1, .flexItem3{
+	width: 25%;
+}
+
+.flexItem1 ul{
+	margin-left: 0 !important;
+}
+
+.flexItem2{
+	width: auto;
+	padding: 0;
 	margin: 0;
+}
+
+.flexItem3{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+}
+
+.navbar{
+	padding: 0;
 }
 
 .logo-max-width{

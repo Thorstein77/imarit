@@ -26,41 +26,41 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'imarit' ); ?></a>
 
-	<header id="masthead" class="site-header">
-        <div class="topbar">
+	<header id="masthead" class="site-header row">
+        <div class="topbar col-12">
             <p>Free worldwide shipping and return</p>
         </div>
 
-        <nav id="menu" class="navbar navbar-expand-md navbar-light container" role="navigation">
-            <button class="navbar-toggle navbar-toggler-left" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="container">
+            <nav id="menu" class="navbar navbar-expand-md navbar-light flexbox" role="navigation">
 
-            <?php
-            wp_nav_menu([
-                'menu'                  =>  'primary',
-                'theme_location'        =>  'primary',
-                'container'             => 'div',
-                'container_id'          =>  'bs4navbar',
-                'container_class'       =>  'collapse navbar-collapse',
-                'menu_id'               =>  'main-menu',
-                'menu_class'            =>  'navbar-nav ml-auto',
-                'depth'                 =>  2,
-                'fallback_cb'           =>  'bs4navwalker::fallback',
-                'walker'                =>  new bs4Navwalker()
-            ]);
-            ?>
-
-            <div class="site-branding navbar-brand logo-max-width">
                 <?php
-                the_custom_logo();
+                wp_nav_menu([
+                    'menu'                  =>  'primary',
+                    'theme_location'        =>  'primary',
+                    'container'             =>  'div',
+                    'container_id'          =>  'bs4navbar',
+                    'container_class'       =>  'navbar flexItem1',
+                    'menu_id'               =>  'main-menu',
+                    'menu_class'            =>  'navbar-nav ml-auto',
+                    'depth'                 =>  2,
+                    'fallback_cb'           =>  'bs4navwalker::fallback',
+                    'walker'                =>  new bs4Navwalker()
+                ]);
                 ?>
-            </div><!-- .site-branding -->
 
 
+                <div class="site-branding navbar-brand logo-max-width flexItem2">
+                    <?php
+                    the_custom_logo();
+                    ?>
+                </div>
 
-
-        </nav>
+                <div class="flexItem3">
+                    blah
+                </div>
+            </nav>
+        </div>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content container">
+	<div id="content" class="site-content">
